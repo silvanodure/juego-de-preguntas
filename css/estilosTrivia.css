@@ -1,0 +1,171 @@
+ @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@1&family=Anton&family=Permanent+Marker&family=Play&family=Raleway&display=swap');
+/*font-family: 'Alumni Sans Inline One', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Play', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+body{  background-image: url(fondotele4.jpg);
+    background-size:cover;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, #3399ff 0%, #ccffff 100%);
+    text-align: center;
+    font-size: 14px;
+}
+.pie_de_pag{
+    font-family: 'Alumni Sans Inline One' sans-serif;
+    text-decoration: underline;
+    font-size: 14px;
+}
+.redes_sociales{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.fa-brands:hover{
+    color: white;
+    transition: .5s;
+    transform:scale(1.5);
+}
+
+.twitter{
+    margin:10px 50px;
+}
+
+.instagram{
+    margin:10px 50px;
+}
+.linkedin{
+    margin:10px 50px;
+}
+
+.inicio{
+    display: block;
+}
+h1{
+    text-align: center;
+    font-size: 90px;
+    font-family: 'anton';
+}
+.descripcion_del_juego{
+
+    font-family: 'Play', sans-serif;
+    font-size: 30px;
+    text-align: center;
+   color:black;
+   text-transform: uppercase;
+}
+.boton_inicio{
+   font-size: 60px;
+    position: absolute;
+    left: 30%;
+    padding: 5px 10px;
+    background-color: rgba(8, 182, 235, 0.925);
+    border-radius: 0px 20px 0px 20px;
+    font-family:'play', sans-serif;
+    cursor: pointer;
+}
+.boton_inicio:hover{
+    color: white;
+    border-radius:20px 0px 20px 0px;
+    transition: .5s;
+    transform: scale(1.1);
+}
+   
+
+.pantalla_de_juego{
+    display: none;
+}
+.pantalla_de_juego{
+    max-width: 800px;
+    margin: 120px auto;
+    text-align: center;
+}
+.caja_pregunta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: auto;
+    background: linear-gradient(to top, #3333ff 0%, #ffffcc 100%);
+    min-height: 80px;
+    border-radius: 20px 0px 20px 0px;
+
+}
+.opciones{
+    max-width: 400px;
+    margin: auto;
+    background-color: #2C77FA;
+    min-height: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+.opciones{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 30px auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.opciones:hover{
+    background-color: white;
+    transition:.4s;
+    transform: scaleX(1.2);
+}
+.pregunta{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+#ultimaPantalla{
+    display: none;
+    justify-content: center;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-size: 48px; 
+    text-decoration: underline;
+}
+#cantidadCorrectas{
+    padding-left: 10px;
+    color: rgb(133, 218, 133);
+    font-size: 46px;
+}
+#cantidadIncorrectas{
+    padding-left: 10px;
+    color: rgb(252, 56, 82);
+    font-size: 46px;
+}
+
+
+.finalJuego{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 36px;
+    color: black;
+}
+#VolverAIniciar{
+    border-radius: 30px 30px 30px 30px;
+    text-align: center;
+    font-size: x-large;
+    padding: 20px 20px;
+    background-color:white;
+}
+#VolverAIniciar:hover{
+    background-color: rgb(107, 106, 106);
+    transform: scale(1.3);
+    transition: .3s;
+}
+.fa-solid{
+    font-size: 30px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Argentina</title>
+    <link rel="stylesheet" href="css/estilosTrivia.css">
+    <script src="https://kit.fontawesome.com/4f513b52f3.js" crossorigin="anonymous"></script>
+    <script src="javascript/preguntas.js"></script>
+    <script defer src="javascript/index.js"></script>
+</head>
+<body>
+    <main>
+        <div class="inicio" id="inicio">
+            <h1>Trivia    <span style="color:#2C77FA;">Arg</span><span style="color: white;">ent</span><span style="color: 
+           #2C77FA ;">ina</span></h1>
+            <p class="descripcion_del_juego">En este cuestionario bizarro ponemos a prueba tus conocimientos sobre los personajes famosos y mediaticos que nos han dejado un sin fin de frases, libros, canciones y momentos hilarantes. </p>
+        
+            <button class="boton_inicio"  onclick="arrancarJuego()">Empezar a Jugar!<i class="fa-solid fa-play"></i> </button>
+        </div>
+
+        <div class="pantalla_de_juego" id="pantalla_del_juego">
+            <div class="caja_pregunta">
+                <p class="pregunta" id="pregunta"> aca las preguntas</h3>
+            </div>
+            <div class="opciones" id="opcion1" onclick="seleccionar(0)">opcion A
+            </div>
+            <div class="opciones" id="opcion2" onclick="seleccionar(1)">opcion B
+            </div>
+            <div class="opciones" id="opcion3" onclick="seleccionar(2)">opcion C
+            </div>
+            <div class="opciones" id="opcion4" onclick="seleccionar(3)">opcion D
+            </div>
+
+
+        </div>
+        <div class="final_de_juego" id="ultimaPantalla">
+            <h2>Respuestas correctas:<span id="cantidadCorrectas">10</span> </h2>
+            <h2>Respuestas incorrectas:<span id="cantidadIncorrectas">10</span> </h2>
+            <p class="finalJuego">Si la mayoria son correctas te felicito! seguro te criaste con un Telefunken 21 pulgadas o tenias mucho tiempo al pedo. <br>Si te fue mal en el cuestionario dejame decirte que te falta cultura popular xD</p>
+            <button id="VolverAIniciar" onclick="volverAlInicio()">Volver al Inicio <i class="fa-solid fa-rotate-left" style="color: #0154e4;"></i></button>
+        </div>
+
+
+    </main>
+
+
+    <footer>
+        <p class="pie_de_pag">Este juego lo realice para el curso del CEF 403, en Tandil, Pcia de Bs As</p>
+         
+        <div class="redes_sociales">
+             <div class="twitter"><a href="https://twitter.com/AbuanteTodo"><i class="fa-brands fa-twitter"></i></a>
+         </div>
+           <div class="instagram">
+            <a href="https://www.instagram.com/silvano.95/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+         <div class="linkedin">
+            <a href="https://www.linkedin.com/in/silvano-dur%C3%A9-b4291a22b/"><i class="fa-brands fa-linkedin"></i></a></div>
+         </div>
+
+        </div> 
+
+
+    </footer>
+    
+</body>
+</html>

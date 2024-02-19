@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivia Argentina</title>
     <link rel="stylesheet" href="css/estilosTrivia.css">
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+   <script defer src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/4f513b52f3.js" crossorigin="anonymous"></script>
     <script src="javascript/preguntas.js"></script>
     <script defer src="javascript/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <main>
@@ -21,6 +25,8 @@
 
         <div class="pantalla_de_juego" id="pantalla_del_juego">
             <div class="caja_pregunta">
+                <button type="button" class="btn" onclick="ayuda()">PISTAS <i class="fa-regular fa-lightbulb"></i></button>
+                
                 <p class="pregunta" id="pregunta"> aca las preguntas</h3>
             </div>
             <div class="opciones" id="opcion1" onclick="seleccionar(0)">opcion A

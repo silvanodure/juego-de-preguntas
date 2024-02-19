@@ -27,6 +27,11 @@ footer{
     display: flex;
     justify-content: center;
     font-size: 30px;
+    
+}
+
+.fa-brands{
+    color: rgb(10, 13, 65);
 }
 .fa-brands:hover{
     color: white;
@@ -84,11 +89,13 @@ h1{
 }
 .pantalla_de_juego{
     max-width: 800px;
-    margin: 120px auto;
+    margin: 60px auto;
     text-align: center;
+    
 }
 .caja_pregunta{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 700px;
@@ -96,14 +103,34 @@ h1{
     background: linear-gradient(to top, #3333ff 0%, #ffffcc 100%);
     min-height: 80px;
     border-radius: 20px 0px 20px 0px;
+}
+.pregunta{
+    font-family: 'Anton', sans-serif!important;
+}
 
+.btn{
+    width: 150px;
+    background-color: rgb(8, 72, 248);
+    color:aliceblue;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.fa-regular{
+    margin: 2px 10px;
+    font-size: 20px;
+}
+.btn:hover{
+    transform: scaleX(1.1);
+    transition: .3s;
 }
 .opciones{
     max-width: 400px;
     margin: auto;
     background-color: #2C77FA;
     min-height: 40px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
+    font-weight: 800 !important;
 }
 .opciones{
     display: flex;

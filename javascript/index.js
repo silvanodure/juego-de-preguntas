@@ -1,6 +1,7 @@
 function arrancarJuego(){
     document.getElementById("inicio").style.display="none";
-    document.getElementById("pantalla_del_juego").style.display="block";
+    document.getElementById("pantalla_del_juego").style.display="block" 
+   
 }
 
 
@@ -23,16 +24,35 @@ function subirPreguntas(index){
     document.getElementById("opcion3").innerHTML = opciones[2]
     document.getElementById("opcion4").innerHTML = opciones[3]
 }
+function ayuda(){
+    Swal.fire({
+        title: "ayuda",
+        text: cuestionario.ayuda,
+        icon: "info",
+      });
+}
 
 function seleccionar(index){
         let comprobar_Respuesta = opciones[index] == cuestionario.respuesta;
     
         if (comprobar_Respuesta){
         
-        alert("respuesta correcta, segui asi que vas bien!");
+            Swal.fire({
+                text: "segui así que vas bien",
+                imageUrl: cuestionario.imagen,
+                imageHeight: 250,
+                imageAlt: "foto del personaje correcto",
+                icon:"success",
+              });
         puntos++;
         } else{
-       alert("le erraste negri, te falta intrusos!");
+            Swal.fire({
+                text: "le erraste negri, te falta Intrusos",
+                imageUrl: cuestionario.imagen,
+                imageHeight: 250,
+                imageAlt: "foto del personaje correcto",
+                icon:"error",
+              });
      };
      
     cargar_pregunta_por_indice++;
